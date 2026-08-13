@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+
+  <!-- =========================
+     HEADER SECTION
+     Contains the website navigation bar
+========================= -->
+<header>
+
+  <!-- ========================= NAVIGATION BAR Main navigation container ========================= -->
+  <nav class="navbar">
+
+    <!-- =========================  NAVIGATION CONTAINER Holds logo, menu links, theme button,  and mobile menu button ========================= -->
+    <div class="nav-container">
+
+      <!-- =========================  WEBSITE LOGO Displays the portfolio name ========================= -->
+      <div class="logo">
+
+        <!-- Logo link
+             Returns user to the top/home page -->
+        <a href="#">
+
+          <!-- Portfolio logo text -->
+          <p>Portfolio<span>.</span></p>
+
+        </a>
+      </div>
+
+
+      <!-- ========================= NAVIGATION MENU  Contains links to all website pages========================= -->
+      <ul class="nav-menu" id="nav-menu">
+
+        <!-- Home page navigation link -->
+        <li>
+          <a class="nav_links" href="./index.html">Home</a>
+        </li>
+
+        <!-- About page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/About.html">About</a>
+        </li>
+
+        <!-- Skills page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/skills.html">Skills</a>
+        </li>
+
+        <!-- Education page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/Education.html">Education</a>
+        </li>
+
+        <!-- Projects page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/Projects.html">Projects</a>
+        </li>
+
+        <!-- Services page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/Services.html">Services</a>
+        </li>
+
+        <!-- Contact page navigation link -->
+        <li>
+          <a class="nav_links" href="./index_page/Contact.html">Contact</a>
+        </li>
+
+      </ul>
+
+
+      <!-- ========================= NAVIGATION CONTROLS  Contains theme toggle and mobile menu button ========================= -->
+      <div style="display: flex; gap: 20px; align-items: center;">
+
+        <!-- =========================  THEME TOGGLE BUTTON Used to switch between light and dark mode========================= -->
+        <div class="theme-toggle" id="theme-btn">
+
+          <!-- Moon icon
+               Changes according to the selected theme -->
+          <i class='bx bx-moon' id="theme-icon"></i>
+
+        </div>
+
+
+        <!-- ========================= MOBILE MENU TOGGLE  Displays hamburger menu on smaller screen devices ========================= -->
+        <div class="menu-toggle" id="mobile-menu">
+
+          <!-- Hamburger menu icon -->
+          <i class='bx bx-menu' id="menu-icon"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+  </nav>
+</header>
+<!--Header end sections-->
+
+<!--=====(home page starting point)=====-->
+  <!-- ======  HOME / HERO SECTION  Starting point of the home page. Introduces the developer, skills, social links, and main actions.=========== -->
+<section class="hero">
+
+  <!-- ========================= HERO CONTENT Contains introduction, typing text, description, social media links, and buttons.========================= -->
+  <div class="hero-content">
+
+    <!-- Main introduction heading -->
+    <h1 class="hi">
+      Hi, I'm <span>Junaid Akbar</span>
+    </h1>
+
+    <!-- Developer role/title The typing-text span is dynamically updated using JavaScript -->
+    <h3>
+      I'm <span class="typing-text"></span>
+    </h3>
+
+    <!-- Short professional introduction describing development skills and technologies -->
+    <p>
+      I build modern, responsive web applications and decentralized
+      solutions using React.js, Node.js, Express.js, MongoDB,
+      Solidity, and Ethereum.
+
+      I focus on creating clean user interfaces, scalable backend
+      systems, smart contracts, and secure Web3 applications.
+    </p>
+
+
+    <!-- =========================  SOCIAL MEDIA ICONS Contains links to professional and social media profiles. ========================= -->
+    <div class="social-icons">
+
+      <!-- LinkedIn profile link -->
+      <a href="https://www.linkedin.com/in/junaid-akbar-shaikh-58b255382/" target="_blank" alt="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <!-- GitHub profile link -->
+      <a href="https://github.com/JunaidAkbar-Web-developer" target="_blank" alt="GitHub Profile">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+              <!-- Email link -->
+        <a href="mailto:junaidakbarshaikh55@gmail.com" alt="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+
+    <!-- ========================= ACTION BUTTONS Provides navigation to the Projects and Contact pages. ========================= -->
+    <div class="btn-group">
+
+      <!-- Projects page button -->
+      <a href="index_page/Projects.html" class="btn">
+        View My Projects
+      </a>
+
+      <!-- Contact page button -->
+      <a href="index_page/Contact.html" class="btn">
+        Contact Me
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ========================= HERO IMAGE SECTION Displays the developer's profile/hero image.========================= -->
+  <div class="hero-img">
+
+    <!-- Circular image container -->
+    <div class="circle">
+
+      <!-- Hero/profile image
+           Replace the image path when needed -->
+      <img
+        src="Assets/image/hero image.png"
+        alt="Junaid Akbar"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+<!--=====(home page end)=====-->
+  <!-- ===== About Section ===== -->
+  <!--===== ABOUT SECTION =====-->
+<section class="about">
+
+  <!--===== ABOUT PAGE TOP HEADING =====-->
+  <h1 class="main-heading">About me</h1>
+
+  <div class="container about-flex">
+
+    <div class="About-page">
+
+      <!--===== ABOUT IMAGE =====-->
+      <div class="about-image">
+        <img src="./Assets/image/my_image_bg.png" alt="About Section">
+      </div>
+
+      <!--===== ABOUT INFORMATION =====-->
+      <div class="information-about">
+
+        <!--===== ABOUT INTRODUCTION HEADING =====-->
+        <h1 class="about_me">About me</h1>
+
+        <!--===== ABOUT DESCRIPTION =====-->
+        <p class="about_paragraph">
+          I’m a <strong>Full-Stack Web & Blockchain Developer</strong> and BS Information Technology student
+          passionate about building modern, responsive, and high-performance digital solutions.
+          I work with <strong>React.js, JavaScript, Node.js, Express.js, MongoDB, Solidity, and Ethereum</strong>,
+          creating clean user interfaces, scalable web applications, smart contracts, and Web3 solutions.
+          I focus on writing clean, maintainable code and turning ideas into professional, user-friendly products.
+        </p>
+
+        <!--===== PERSONAL DETAILS =====-->
+        <p class="detail_text"><strong>Name: </strong> <span>Junaid Akbar Shaikh</span></p>
+        <p class="detail_text"><strong>Role: </strong> <span>Full-stack web & Blockchain Developer</span></p>
+        <p class="detail_text"><strong>Nationality: </strong> <span>Pakistani</span></p>
+        <p class="detail_text"><strong>Address:</strong> <span>Hyderabad,Sindh</span></p>
+        <p class="detail_text"><strong>Email:</strong> <span>junaidakbarshaikh55@gmail.com</span></p>
+        <p class="detail_text">
+          <strong>Availability: </strong>
+          <span>Open to Freelance & Remote Opportunities</span>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--=====(About page ending point)=====-->
+
+  <!--===== PROFESSIONAL SKILLS SECTION =====-->
+<section class="skills">
+
+  <!--===== SKILLS PAGE HEADING =====-->
+  <h1 class="main-heading">professional Skills</h1>
+
+  <div class="container skills-flex">
+
+    <div class="skills-page">
+
+      <!--===== SKILLS CONTAINER =====-->
+      <div class="skills-container">
+
+        <!--===== TECHNICAL SKILLS =====-->
+        <div class="tech-skills">
+          <h2 class="heading-underline">Technical Skills</h2>
+
+          <!--===== FRONT-END DEVELOPMENT =====-->
+          <div class="skill-row">
+            <div class="skill-info"><span>Front-end Development</span><span>90%</span></div>
+            <div class="bar-container">
+              <div class="bar-fill" style="--target-width: 90%;"></div>
+            </div>
+          </div>
+
+          <!--===== BACK-END DEVELOPMENT =====-->
+          <div class="skill-row">
+            <div class="skill-info"><span>Back-end Development</span><span>80%</span></div>
+            <div class="bar-container">
+              <div class="bar-fill" style="--target-width: 80%;"></div>
+            </div>
+          </div>
+
+          <!--===== DATABASE MANAGEMENT =====-->
+          <div class="skill-row">
+            <div class="skill-info"><span>Database Management</span><span>75%</span></div>
+            <div class="bar-container">
+              <div class="bar-fill" style="--target-width: 75%;"></div>
+            </div>
+          </div>
+
+          <!--===== BLOCKCHAIN DEVELOPMENT =====-->
+          <div class="skill-row">
+            <div class="skill-info"><span>Blockchain Development</span><span>80%</span></div>
+            <div class="bar-container">
+              <div class="bar-fill" style="--target-width: 80%;"></div>
+            </div>
+          </div>
+
+          <!--===== PROGRAMMING =====-->
+          <div class="skill-row">
+            <div class="skill-info"><span>Programming</span><span>90%</span></div>
+            <div class="bar-container">
+              <div class="bar-fill" style="--target-width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--===== PROFESSIONAL SKILLS =====-->
+        <div class="prof-skills">
+          <h2 class="prof-skill-heading">Professional Skills</h2>
+
+          <!--===== PROFESSIONAL SKILLS GRID =====-->
+          <div class="prof-skills-grid">
+
+            <!--===== CREATIVITY =====-->
+            <div class="circle-box">
+              <svg class="circle-svg">
+                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 31.4;"></circle>
+              </svg>
+              <div class="percentage">
+                <p class="circle-name">90%</p>
+              </div>
+              <p class="circle-name">Creativity</p>
+            </div>
+
+            <!--===== COMMUNICATION =====-->
+            <div class="circle-box">
+              <svg class="circle-svg">
+                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 109.9;"></circle>
+              </svg>
+              <div class="percentage">
+                <p class="circle-name">65%</p>
+              </div>
+              <p class="circle-name">Communication</p>
+            </div>
+
+            <!--===== PROBLEM SOLVING =====-->
+            <div class="circle-box">
+              <svg class="circle-svg">
+                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 108.8;"></circle>
+              </svg>
+              <div class="percentage">
+                <p class="circle-name">60%</p>
+              </div>
+              <p class="circle-name">Problem Solving</p>
+            </div>
+
+            <!--===== TEAMWORK =====-->
+            <div class="circle-box">
+              <svg class="circle-svg">
+                <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+                <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 47.1;"></circle>
+              </svg>
+              <div class="percentage">
+                <p class="circle-name">85%</p>
+              </div>
+              <p class="circle-name">Teamwork</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+  <!--=====(skills section ending point)=====-->
+
+<!--===== EDUCATION SECTION =====-->
+<section class="education">
+
+  <!--===== EDUCATION PAGE HEADING =====-->
+  <h1 class="main-heading">Education</h1>
+
+  <div class="container education_flex">
+    <div class="education_page">
+
+      <!--===== EDUCATION TIMELINE =====-->
+      <div class="timeline">
+
+        <!--===== MATRICULATION =====-->
+        <div class="educatin_container education_left" style="text-align: left;">
+          <div class="date" style="margin-left: 45px;">2022</div>
+
+          <div class="content">
+            <h3 class="education_status">Matriculation</h3>
+
+            <p class="education_p">
+              <strong>Government (N) Noor Muhammad High School, Hyderabad</strong><br>
+              <strong>Board:</strong> Board of Intermediate and Secondary Education, Hyderabad.<br>
+              <strong>Group:</strong> Science<br>
+              <strong>Grade: A</strong><br>
+              Completed Matriculation with a strong foundation in mathematics, physics,
+              chemistry, computer studies, and general education.
+            </p>
+          </div>
+        </div>
+
+        <!--===== INTERMEDIATE =====-->
+        <div class="educatin_container right">
+          <div class="date" style="margin-left: 45px;">2024</div>
+
+          <div class="content">
+            <h3 class="education_status">Intermediate</h3>
+
+            <p class="education_p">
+              <strong>Government Higher Secondary Odero Lal Station</strong><br>
+              <strong>Board:</strong> Board of Intermediate and Secondary Education, Hyderabad.<br>
+              <strong>Group:</strong> Pre-Medical<br>
+              <strong>Grade: A+</strong><br>
+              Completed Intermediate education in the Pre-Medical group, studying Biology,
+              Chemistry, and Physics and developing a strong foundation in scientific concepts
+              and analytical thinking.
+            </p>
+          </div>
+        </div>
+
+        <!--===== DIPLOMA IN INFORMATION TECHNOLOGY =====-->
+        <div class="educatin_container education_left" style="text-align: left;">
+          <div class="date" style="margin-left: 45px;">2024-25</div>
+
+          <div class="content">
+            <h3 class="education_status">
+              One-Year Diploma in Information Technology (DIT)
+            </h3>
+
+            <p class="education_p">
+              <strong>Government College of Technology (Boys), Hyderabad</strong><br>
+              <strong>Board:</strong> Sindh Board of Technical Education Karachi<br>
+              <strong>Grade: A</strong><br>
+              Completed a one-year Diploma in Information Technology (DIT), gaining practical
+              knowledge in computer applications, programming fundamentals, office productivity
+              tools, and essential IT skills.
+            </p>
+          </div>
+        </div>
+
+        <!--===== BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY =====-->
+        <div class="educatin_container right">
+          <div class="date" style="margin-left: 45px;">2025</div>
+
+          <div class="content">
+            <h3 class="education_status">
+              Bachelor of Science in Information Technology (BS IT)
+            </h3>
+
+            <p class="education_p">
+              <strong>University of Sindh, Jamshoro</strong><br>
+              <strong>Program:</strong> BS Information Technology<br>
+              <strong>Status:</strong> Currently Pursuing<br>
+              Studying Information Technology with a focus on software development,
+              web development, databases, networking, programming, and emerging
+              technologies including Blockchain and Web3.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<!--=====(Education section ending point)=====-->
+
+<!--===== PROJECTS SECTION START =====-->
+<section class="projects">
+
+  <!--===== PROJECTS PAGE HEADING =====-->
+  <h1 class="main-heading">Previous Projects</h1>
+
+  <div class="container project-flex">
+    <div class="project-page">
+
+      <!--===== PROJECT CARD 1 START =====-->
+      <div class="container-project">
+        <div class="project_card">
+          <img src="Assets/image/portfolio1.jpg" alt="Project preview">
+
+          <div class="info-card">
+            <div class="place">My previous project using HTML and CSS</div>
+            <div class="title">Restaurant, Hyderabad</div>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <!--===== PROJECT CARD 1 END =====-->
+
+
+      <!--===== PROJECT CARD 2 START =====-->
+      <div class="container-project">
+        <div class="project_card">
+          <img src="Assets/image/portfolio2.jpg" alt="Project preview">
+
+          <div class="info-card">
+            <div class="place">My previous project using HTML and CSS</div>
+            <div class="title">Restaurant, Hyderabad</div>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <!--===== PROJECT CARD 2 END =====-->
+
+
+      <!--===== PROJECT CARD 3 START =====-->
+      <div class="container-project">
+        <div class="project_card">
+          <img src="Assets/image/portfolio5.jpg" alt="Project preview">
+
+          <div class="info-card">
+            <div class="place">My previous project using HTML and CSS</div>
+            <div class="title">Restaurant, Hyderabad</div>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <!--===== PROJECT CARD 3 END =====-->
+
+
+      <!--===== PROJECT CARD 4 START =====-->
+      <div class="container-project">
+        <div class="project_card">
+          <img src="Assets/image/portfolio6.jpg" alt="Project preview">
+
+          <div class="info-card">
+            <div class="place">My previous project using HTML and CSS</div>
+            <div class="title">Restaurant, Hyderabad</div>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      <!--===== PROJECT CARD 4 END =====-->
+
+    </div>
+  </div>
+
+</section>
+<!--===== PROJECTS SECTION END =====-->
+ <!--===== SERVICES SECTION START =====-->
+<section class="Services">
+
+  <!--===== SERVICES PAGE HEADING =====-->
+  <h1 class="main-heading">Services</h1>
+
+  <div class="container service-flex">
+    <div class="service-page">
+
+      <!--===== FULL-STACK DEVELOPMENT SERVICE START =====-->
+      <div class="service-card">
+        <i class="fa-solid fa-code"></i>
+
+        <h3>Full-stack Development</h3>
+
+        <p>
+          Building modern, responsive, and scalable web applications using
+          React.js, Node.js, Express.js, and MongoDB. I create user-friendly
+          frontend interfaces, secure backend APIs, and complete full-stack solutions.
+        </p>
+      </div>
+      <!--===== FULL-STACK DEVELOPMENT SERVICE END =====-->
+
+
+      <!--===== BLOCKCHAIN DEVELOPMENT SERVICE START =====-->
+      <div class="service-card">
+        <i class="fa-solid fa-cubes"></i>
+
+        <h3>Blockchain Development</h3>
+
+        <p>
+          Developing secure and reliable blockchain solutions and decentralized
+          applications (DApps) using Solidity, Ethereum, Smart Contracts, and Web3
+          technologies. Focused on transparent, efficient, and scalable decentralized systems.
+        </p>
+      </div>
+      <!--===== BLOCKCHAIN DEVELOPMENT SERVICE END =====-->
+
+
+      <!--===== PROGRAMMING SERVICE START =====-->
+      <div class="service-card">
+        <i class="fa-solid fa-terminal"></i>
+
+        <h3>Programming</h3>
+
+        <p>
+          Providing clean, efficient, and problem-solving-focused programming
+          solutions using modern development practices. Experienced in JavaScript,
+          Solidity, C++, and web technologies, with a focus on writing maintainable
+          and optimized code.
+        </p>
+      </div>
+      <!--===== PROGRAMMING SERVICE END =====-->
+
+    </div>
+  </div>
+
+</section>
+<!--===== SERVICES SECTION END =====-->
+<!--===== CONTACT SECTION START =====-->
+<section class="contact">
+
+  <!--===== CONTACT PAGE HEADING =====-->
+  <h1 class="main-heading">Contact me</h1>
+
+  <div class="container contact-flex">
+    <div class="contact-page">
+
+      <!--===== CONTACT FORM BOX START =====-->
+      <div class="contact-box">
+
+        <!-- Contact form heading -->
+        <h2>Contact Us Form</h2>
+
+        <!--===== CONTACT FORM START =====-->
+        <form>
+
+          <!--===== FORM INPUT GRID START =====-->
+          <div class="form-grid">
+
+            <!-- Name input -->
+            <div class="input-group">
+              <label>Name</label>
+              <input type="text" placeholder="Enter your name">
+            </div>
+
+            <!-- Email input -->
+            <div class="input-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email">
+            </div>
+
+            <!-- Phone input -->
+            <div class="input-group">
+              <label>Phone</label>
+              <input type="text" placeholder="Enter your phone">
+            </div>
+
+            <!-- Subject input -->
+            <div class="input-group">
+              <label>Subject</label>
+              <input type="text" placeholder="Subject">
+            </div>
+
+          </div>
+          <!--===== FORM INPUT GRID END =====-->
+
+
+          <!--===== MESSAGE INPUT START =====-->
+          <div class="input-group message-box">
+            <label>Message</label>
+            <textarea placeholder="Write your message..."></textarea>
+          </div>
+          <!--===== MESSAGE INPUT END =====-->
+
+
+          <!--===== SUBMIT BUTTON START =====-->
+          <div class="send-btn">
+            <button type="submit">Submit</button>
+          </div>
+          <!--===== SUBMIT BUTTON END =====-->
+
+        </form>
+        <!--===== CONTACT FORM END =====-->
+
+      </div>
+      <!--===== CONTACT FORM BOX END =====-->
+
+    </div>
+  </div>
+
+</section>
+<!--===== CONTACT SECTION END =====-->
+<!--===== FOOTER SECTION START =====-->
+<footer class="footer">
+
+  <!--===== FOOTER MAIN CONTAINER START =====-->
+  <div class="footer-container">
+
+    <!--===== ABOUT / BRAND COLUMN START =====-->
+    <div class="footer-col">
+
+      <!-- Developer logo and name -->
+      <div class="logo">
+        <i class="fas fa-code"></i>
+
+        <div>
+          <h2>Junaid Akbar Shaikh</h2>
+          <span>Web & Blockchain Developer</span>
+        </div>
+      </div>
+
+      <!-- Short professional description -->
+      <p>
+        Building modern, responsive, and high-performance digital experiences
+        with a focus on React, MERN Stack, and Blockchain technology.
+        I transform ideas into clean, scalable, and user-friendly web
+        applications using modern development practices.
+      </p>
+
+      <!--===== SOCIAL LINKS START =====-->
+      <div class="social-links">
+
+        <!-- GitHub profile link -->
+        <a href="https://github.com/JunaidAkbar-Web-developer" target="_blank" alt="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <!-- LinkedIn profile link -->
+        <a href="https://www.linkedin.com/in/junaid-akbar-shaikh-58b255382/" target="_blank" alt="LinkedIn Profile">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Email link -->
+        <a href="mailto:junaidakbarshaikh55@gmail.com" alt="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+      </div>
+      <!--===== SOCIAL LINKS END =====-->
+
+    </div>
+    <!--===== ABOUT / BRAND COLUMN END =====-->
+
+
+    <!--===== QUICK LINKS COLUMN START =====-->
+    <div class="footer-col">
+
+      <h3>Quick Links</h3>
+
+      <!-- Website navigation links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index_page/About.html">About</a></li>
+        <li><a href="index_page/skills.html">Skills</a></li>
+        <li><a href="index_page/Education.html">Education</a></li>
+        <li><a href="index_page/Projects.html">Projects</a></li>
+        <li><a href="index_page/Services.html">Services</a></li>
+        <li><a href="index_page/Contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+    <!--===== QUICK LINKS COLUMN END =====-->
+
+
+    <!--===== TECHNOLOGIES COLUMN START =====-->
+    <div class="footer-col">
+
+      <h3>Technologies</h3>
+
+      <!-- Technologies and development tools -->
+      <ul>
+        <li class="Skill_tech">React.js</li>
+        <li class="Skill_tech">JavaScript</li>
+        <li class="Skill_tech">Node.js</li>
+        <li class="Skill_tech">Express.js</li>
+        <li class="Skill_tech">MongoDB</li>
+        <li class="Skill_tech">Solidity</li>
+        <li class="Skill_tech">Ethereum</li>
+        <li class="Skill_tech">Git & GitHub</li>
+      </ul>
+
+    </div>
+    <!--===== TECHNOLOGIES COLUMN END =====-->
+
+
+    <!--===== CONTACT COLUMN START =====-->
+    <div class="footer-col">
+
+      <h3>Let's Connect</h3>
+
+      <!-- Contact and collaboration message -->
+      <p>
+        Have a project idea or want to collaborate?
+        Feel free to reach out. I'm open to freelance projects and
+        development opportunities.
+      </p>
+
+      <!--===== CONTACT INFORMATION START =====-->
+      <div class="contact-info">
+
+        <!-- Email information -->
+        <p>
+          <i class="fas fa-envelope" style="font-size: 2.5vh;"></i>
+          junaidakbarshaikh55@gmail.com
+        </p>
+
+        <!-- Location information -->
+        <p>
+          <i class="fas fa-map-marker-alt" style="font-size: 3vh;"></i>
+          Pakistan
+        </p>
+
+        <!-- Availability information -->
+        <p>
+          <i class="fas fa-clock" style="font-size: 2.5vh;"></i>
+          Available for Projects
+        </p>
+
+      </div>
+      <!--===== CONTACT INFORMATION END =====-->
+
+    </div>
+    <!--===== CONTACT COLUMN END =====-->
+
+  </div>
+  <!--===== FOOTER MAIN CONTAINER END =====-->
+
+
+  <!--===== FOOTER BOTTOM START =====-->
+  <div class="footer-bottom">
+
+    <!-- Copyright information -->
+    <p>
+      © 2026 Junaid Akbar Shaikh. All Rights Reserved.
+    </p>
+
+    <!-- Footer tagline -->
+    <p>
+      Building the web. Exploring blockchain.
+      Turning ideas into digital solutions.
+    </p>
+
+  </div>
+  <!--===== FOOTER BOTTOM END =====-->
+
+</footer>
+<!--===== FOOTER SECTION END =====-->
+
+
+<!--===== JAVASCRIPT FILE =====-->
+<script src="./scripte.js"></script>
+</body>
+
+</html>

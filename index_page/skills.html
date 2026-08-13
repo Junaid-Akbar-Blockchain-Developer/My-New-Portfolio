@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Define the character encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Make the website responsive on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Define the page title -->
+  <title>Skills Page</title>
+
+  <!-- Import Boxicons library -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Import Font Awesome icons library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Link the main CSS file -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<!-- Apply the light theme to the page -->
+
+<body class="light-theme">
+
+  <!-- ===== Header section starts ===== -->
+  <header>
+
+    <!-- Main navigation bar -->
+    <nav class="navbar">
+
+      <!-- Container for navigation content -->
+      <div class="nav-container">
+
+        <!-- Website logo section -->
+        <div class="logo">
+
+          <!-- Logo link -->
+          <a href="#">
+
+            <!-- Website logo text -->
+            <p>Portfolio<span>.</span></p>
+
+          </a>
+        </div>
+
+        <!-- Navigation menu starts -->
+        <ul class="nav-menu" id="nav-menu">
+
+          <!-- Home navigation link -->
+          <li>
+            <a class="nav_links active" href="../index.html">Home</a>
+          </li>
+
+          <!-- About navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/About.html">About</a>
+          </li>
+
+          <!-- Education navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/Education.html">Education</a>
+          </li>
+
+          <!-- Skills navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/skills.html">Skills</a>
+          </li>
+
+          <!-- Projects navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/Projects.html">Projects</a>
+          </li>
+
+          <!-- Services navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/Services.html">Services</a>
+          </li>
+
+          <!-- Contact navigation link -->
+          <li>
+            <a class="nav_links" href="../index_page/Contact.html">Contact</a>
+          </li>
+
+        </ul>
+        <!-- Navigation menu ends -->
+
+        <!-- Navigation controls container -->
+        <div style="display: flex; gap: 20px; align-items: center;">
+
+          <!-- Theme toggle button -->
+          <div class="theme-toggle" id="theme-btn">
+
+            <!-- Moon icon for theme switching -->
+            <i class='bx bx-moon' id="theme-icon"></i>
+
+          </div>
+
+          <!-- Mobile menu toggle button -->
+          <div class="menu-toggle" id="mobile-menu">
+
+            <!-- Mobile menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- ===== Header section ends ===== -->
+
+
+  <!-- ===== Skills section starts ===== -->
+  <section class="skills">
+
+    <!-- Main skills section heading -->
+    <h1 class="main-heading">Professional Skills</h1>
+
+    <!-- Main skills content container -->
+    <div class="container skills-flex">
+
+      <!-- Skills page wrapper -->
+      <div class="skills-page">
+
+        <!-- Skills content container -->
+        <div class="skills-container">
+
+          <!-- ===== Technical skills section ===== -->
+          <div class="tech-skills">
+
+            <!-- Technical skills heading -->
+            <h2 class="heading-underline">Technical Skills</h2>
+
+            <!-- Front-end development skill -->
+            <div class="skill-row">
+
+              <!-- Front-end skill name and percentage -->
+              <div class="skill-info">
+                <span>Front-end Development</span>
+                <span>90%</span>
+              </div>
+
+              <!-- Front-end progress bar -->
+              <div class="bar-container">
+                <div class="bar-fill" style="--target-width: 90%;"></div>
+              </div>
+
+            </div>
+
+            <!-- Back-end development skill -->
+            <div class="skill-row">
+
+              <!-- Back-end skill name and percentage -->
+              <div class="skill-info">
+                <span>Back-end Development</span>
+                <span>80%</span>
+              </div>
+
+              <!-- Back-end progress bar -->
+              <div class="bar-container">
+                <div class="bar-fill" style="--target-width: 80%;"></div>
+              </div>
+
+            </div>
+
+            <!-- Database management skill -->
+            <div class="skill-row">
+
+              <!-- Database skill name and percentage -->
+              <div class="skill-info">
+                <span>Database Management</span>
+                <span>75%</span>
+              </div>
+
+              <!-- Database progress bar -->
+              <div class="bar-container">
+                <div class="bar-fill" style="--target-width: 75%;"></div>
+              </div>
+
+            </div>
+
+            <!-- Blockchain development skill -->
+            <div class="skill-row">
+
+              <!-- Blockchain skill name and percentage -->
+              <div class="skill-info">
+                <span>Blockchain Development</span>
+                <span>80%</span>
+              </div>
+
+              <!-- Blockchain progress bar -->
+              <div class="bar-container">
+                <div class="bar-fill" style="--target-width: 80%;"></div>
+              </div>
+
+            </div>
+
+            <!-- Programming skill -->
+            <div class="skill-row">
+
+              <!-- Programming skill name and percentage -->
+              <div class="skill-info">
+                <span>Programming</span>
+                <span>90%</span>
+              </div>
+
+              <!-- Programming progress bar -->
+              <div class="bar-container">
+                <div class="bar-fill" style="--target-width: 90%;"></div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- ===== Technical skills section ends ===== -->
+
+
+          <!-- ===== Professional skills section ===== -->
+          <div class="prof-skills">
+
+            <!-- Professional skills heading -->
+            <h2 class="prof-skill-heading">Professional Skills</h2>
+
+            <!-- Professional skills grid -->
+            <div class="prof-skills-grid">
+
+              <!-- Creativity skill circle -->
+              <div class="circle-box">
+
+                <!-- SVG circle progress container -->
+                <svg class="circle-svg">
+
+                  <!-- Background circle -->
+                  <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+
+                  <!-- Creativity progress circle -->
+                  <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 31.4;"></circle>
+
+                </svg>
+
+                <!-- Creativity percentage -->
+                <div class="percentage">
+                  <p class="circle-name">90%</p>
+                </div>
+
+                <!-- Creativity skill name -->
+                <p class="circle-name">Creativity</p>
+
+              </div>
+
+
+              <!-- Communication skill circle -->
+              <div class="circle-box">
+
+                <!-- SVG circle progress container -->
+                <svg class="circle-svg">
+
+                  <!-- Background circle -->
+                  <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+
+                  <!-- Communication progress circle -->
+                  <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 109.9;"></circle>
+
+                </svg>
+
+                <!-- Communication percentage -->
+                <div class="percentage">
+                  <p class="circle-name">65%</p>
+                </div>
+
+                <!-- Communication skill name -->
+                <p class="circle-name">Communication</p>
+
+              </div>
+
+
+              <!-- Problem solving skill circle -->
+              <div class="circle-box">
+
+                <!-- SVG circle progress container -->
+                <svg class="circle-svg">
+
+                  <!-- Background circle -->
+                  <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+
+                  <!-- Problem solving progress circle -->
+                  <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 108.8;"></circle>
+
+                </svg>
+
+                <!-- Problem solving percentage -->
+                <div class="percentage">
+                  <p class="circle-name">60%</p>
+                </div>
+
+                <!-- Problem solving skill name -->
+                <p class="circle-name">Problem Solving</p>
+
+              </div>
+
+
+              <!-- Teamwork skill circle -->
+              <div class="circle-box">
+
+                <!-- SVG circle progress container -->
+                <svg class="circle-svg">
+
+                  <!-- Background circle -->
+                  <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+
+                  <!-- Teamwork progress circle -->
+                  <circle class="circle-progress" cx="60" cy="60" r="50" style="--target-offset: 47.1;"></circle>
+
+                </svg>
+
+                <!-- Teamwork percentage -->
+                <div class="percentage">
+                  <p class="circle-name">85%</p>
+                </div>
+
+                <!-- Teamwork skill name -->
+                <p class="circle-name">Teamwork</p>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- ===== Professional skills section ends ===== -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Skills section ends ===== -->
+
+
+  <!-- ===== Footer section starts ===== -->
+  <footer class="footer">
+
+    <!-- Main footer container -->
+    <div class="footer-container">
+
+
+      <!-- ===== Footer About column ===== -->
+      <div class="footer-col">
+
+        <!-- Footer logo and developer information -->
+        <div class="logo">
+
+          <!-- Code icon -->
+          <i class="fas fa-code"></i>
+
+          <!-- Developer name and profession -->
+          <div>
+
+            <!-- Developer name -->
+            <h2>Junaid Akbar Shaikh</h2>
+
+            <!-- Developer profession -->
+            <span>Web & Blockchain Developer</span>
+
+          </div>
+        </div>
+
+        <!-- Developer introduction -->
+        <p>
+          Building modern, responsive, and high-performance digital experiences
+          with a focus on React, MERN Stack, and Blockchain technology.
+          I transform ideas into clean, scalable, and user-friendly web
+          applications using modern development practices.
+        </p>
+
+        <!-- Social media links -->
+        <div class="social-links">
+
+          <!-- GitHub profile link -->
+          <a href="https://github.com/JunaidAkbar-Web-developer" target="_blank" alt="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <!-- LinkedIn profile link -->
+          <a href="https://www.linkedin.com/in/junaid-akbar-shaikh-58b255382/" target="_blank" alt="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <!-- Email link -->
+          <a href="mailto:junaidakbarshaikh55@gmail.com" target="_blank" alt="Email Profile ">
+            <i class="fas fa-envelope"></i>
+          </a>
+
+        </div>
+      </div>
+      <!-- ===== Footer About column ends ===== -->
+
+
+      <!-- ===== Quick Links column ===== -->
+      <div class="footer-col">
+
+        <!-- Quick links heading -->
+        <h3>Quick Links</h3>
+
+        <!-- Quick navigation links -->
+        <ul>
+
+          <!-- Home footer link -->
+          <li><a href="./index.html">Home</a></li>
+
+          <!-- About footer link -->
+          <li><a href="./about.html">About</a></li>
+
+          <!-- Skills footer link -->
+          <li><a href="./skills.html">Skills</a></li>
+
+          <!-- Education footer link -->
+          <li><a href="./education.html">Education</a></li>
+
+          <!-- Projects footer link -->
+          <li><a href="./projects.html">Projects</a></li>
+
+          <!-- Services footer link -->
+          <li><a href="./services.html">Services</a></li>
+
+          <!-- Contact footer link -->
+          <li><a href="./contact .html">Contact</a></li>
+
+        </ul>
+      </div>
+      <!-- ===== Quick Links column ends ===== -->
+
+
+      <!-- ===== Technologies column ===== -->
+      <div class="footer-col">
+
+        <!-- Technologies heading -->
+        <h3>Technologies</h3>
+
+        <!-- Technologies list -->
+        <ul>
+
+          <!-- React.js technology -->
+          <li class="Skill_tech">React.js</li>
+
+          <!-- JavaScript technology -->
+          <li class="Skill_tech">JavaScript</li>
+
+          <!-- Node.js technology -->
+          <li class="Skill_tech">Node.js</li>
+
+          <!-- Express.js technology -->
+          <li class="Skill_tech">Express.js</li>
+
+          <!-- MongoDB technology -->
+          <li class="Skill_tech">MongoDB</li>
+
+          <!-- Solidity technology -->
+          <li class="Skill_tech">Solidity</li>
+
+          <!-- Ethereum technology -->
+          <li class="Skill_tech">Ethereum</li>
+
+          <!-- Git and GitHub technology -->
+          <li class="Skill_tech">Git & GitHub</li>
+
+        </ul>
+      </div>
+      <!-- ===== Technologies column ends ===== -->
+
+
+      <!-- ===== Contact column ===== -->
+      <div class="footer-col">
+
+        <!-- Contact heading -->
+        <h3>Let's Connect</h3>
+
+        <!-- Contact introduction -->
+        <p>
+          Have a project idea or want to collaborate?
+          Feel free to reach out. I'm open to freelance projects and
+          development opportunities.
+        </p>
+
+        <!-- Contact information container -->
+        <div class="contact-info">
+
+          <!-- Email information -->
+          <p>
+            <i class="fas fa-envelope"></i>
+            junaidakbarshaikh55@gmail.com
+          </p>
+
+          <!-- Location information -->
+          <p>
+            <i class="fas fa-map-marker-alt"></i>
+            Pakistan
+          </p>
+
+          <!-- Availability information -->
+          <p>
+            <i class="fas fa-clock"></i>
+            Available for Projects
+          </p>
+
+        </div>
+      </div>
+      <!-- ===== Contact column ends ===== -->
+
+    </div>
+
+
+    <!-- ===== Bottom footer section ===== -->
+    <div class="footer-bottom">
+
+      <!-- Copyright information -->
+      <p>
+        © 2026 Junaid Akbar Shaikh. All Rights Reserved.
+      </p>
+
+      <!-- Footer tagline -->
+      <p>
+        Building the web. Exploring blockchain.
+        Turning ideas into digital solutions.
+      </p>
+
+    </div>
+    <!-- ===== Bottom footer section ends ===== -->
+
+  </footer>
+  <!-- ===== Footer section ends ===== -->
+
+
+  <!-- Link the JavaScript file -->
+  <script src="../scripte.js"></script>
+
+</body>
+
+</html>

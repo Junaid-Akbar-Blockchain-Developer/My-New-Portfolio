@@ -1,0 +1,2592 @@
+/* ===== Global reset ===== */
+
+/* Apply border-box sizing to all elements */
+* {
+  box-sizing: border-box;
+
+  /* Remove default margins */
+  margin: 0;
+
+  /* Remove default padding */
+  padding: 0;
+}
+
+/* Set the root font size */
+html {
+  font-size: 16px;
+}
+
+
+/* ===== CSS Variables ===== */
+
+:root {
+
+  /* Define primary background color */
+  --bg-primary1: #050b14;
+
+  /* Define secondary background color */
+  --bg-secondary: #071426;
+
+  /* Define tertiary background color */
+  --bg-tertiary: #0b1f3a;
+
+  /* Define the main background gradient */
+  --bg-gradient: linear-gradient(
+    135deg,
+    var(--bg-primary1),
+    var(--bg-secondary),
+    var(--bg-tertiary)
+  );
+
+  /* Define border and line color */
+  --line-color: #045c49;
+
+  /* Define primary theme color */
+  --primary-color: #008073;
+
+  /* Define main background color */
+  --bg-color: rgb(22, 20, 20);
+
+  /* Define main text color */
+  --text-color: white;
+
+  /* Define hover color */
+  --hover-color: #008073;
+
+  /* Define header color */
+  --header-color: black;
+}
+
+
+/* ===== Main container ===== */
+
+/* Style the main content container */
+.container {
+  /* Set maximum container width */
+  max-width: 1300px;
+
+  /* Center the container horizontally */
+  margin: 0 auto;
+
+  /* Add container padding */
+  padding: 20px;
+}
+
+
+/* ===== Dark theme variables ===== */
+
+/* Define colors for the dark-theme class */
+body.dark-theme {
+
+  /* Set dark theme background */
+  --bg-color: #f6f1f1;
+
+  /* Set dark theme text color */
+  --text-color: black;
+
+  /* Define dark theme heading color */
+  --heading: white;
+
+  /* Set dark theme header color */
+  --header-color: #166666;
+}
+
+
+/* ===== Body styling ===== */
+
+/* Style the main body */
+body {
+
+  /* Remove default body margin */
+  margin: 0;
+
+  /* Set the default font */
+  font-family: sans-serif;
+
+  /* Set the body background */
+  background-color: var(--bg-color);
+
+  /* Add theme transition */
+  transition: 0.3s;
+
+  /* Reset body margin */
+  margin: 0;
+
+  /* Set the main font family */
+  font-family: Arial, sans-serif;
+
+  /* Set default line height */
+  line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+/* Style the main navigation bar */
+.navbar {
+
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set navbar background */
+  background-color: var(--bg-gradient);
+
+  /* Keep navbar fixed while scrolling */
+  position: sticky;
+
+  /* Stick navbar to the top */
+  top: 0;
+
+  /* Keep navbar above other elements */
+  z-index: 1000;
+}
+
+
+/* ===== Navbar container ===== */
+
+/* Style the navbar content container */
+.nav-container {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Distribute navbar items */
+  justify-content: space-evenly;
+
+  /* Center navbar items vertically */
+  align-items: center;
+
+  /* Add navbar padding */
+  padding: 1rem;
+
+  /* Set maximum navbar width */
+  max-width: 1200px;
+
+  /* Center navbar container */
+  margin: 0 auto;
+}
+
+
+/* ===== Logo ===== */
+
+/* Remove logo link decoration */
+.logo a {
+  /* Remove underline */
+  text-decoration: none;
+
+  /* Set logo link color */
+  color: var(--primary-color);
+}
+
+/* Style the logo text */
+.logo p {
+
+  /* Set logo font size */
+  font-size: 2.5vh;
+
+  /* Make logo text bold */
+  font-weight: 800;
+
+  /* Remove paragraph margin */
+  margin: 0;
+
+  /* Set logo text color */
+  color: var(--primary-color);
+}
+
+
+/* ===== Navigation menu ===== */
+
+/* Style the navigation menu */
+.nav-menu {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center menu items vertically */
+  align-items: center;
+
+  /* Remove default margin */
+  margin: 0;
+
+  /* Remove default padding */
+  padding: 0;
+}
+
+
+/* ===== Navigation items ===== */
+
+/* Style navigation list items */
+.nav-menu li {
+
+  /* Remove list bullets */
+  list-style: none;
+
+  /* Add left spacing */
+  margin-left: 4vh;
+}
+
+
+/* ===== Navigation links ===== */
+
+/* Style navigation links */
+.nav-menu a {
+
+  /* Display links as inline blocks */
+  display: inline-block;
+
+  /* Remove link underline */
+  text-decoration: none;
+
+  /* Add link padding */
+  padding: 8px 12px;
+
+  /* Make navigation text bold */
+  font-weight: 700;
+
+  /* Set navigation text color */
+  color: var(--text-color);
+
+  /* Round navigation corners */
+  border-radius: 8px;
+
+  /* Add smooth hover transition */
+  transition: all 0.3s ease;
+}
+
+
+/* ===== Navigation hover effect ===== */
+
+/* Add hover effect to navigation links */
+.nav-menu a:hover {
+
+  /* Keep hover text color */
+  color: var(--text-color);
+
+  /* Change hover background */
+  background-color: var(--hover-color);
+
+  /* Add hover glow */
+  box-shadow: 0 0 20px var(--hover-color);
+}
+
+
+/* ===== Theme and mobile menu buttons ===== */
+
+/* Style theme and mobile menu buttons */
+.theme-toggle,
+.menu-toggle {
+
+  /* Set button color */
+  color: var(--hover-color);
+
+  /* Show pointer cursor */
+  cursor: pointer;
+
+  /* Set icon size */
+  font-size: 3.5vh;
+}
+
+
+/* ===== Normal navigation link ===== */
+
+/* Style normal navigation links */
+.nav_links {
+
+  /* Remove link underline */
+  text-decoration: none;
+
+  /* Add navigation link padding */
+  padding: 10px 16px;
+
+  /* Round link corners */
+  border-radius: 8px;
+
+  /* Add smooth transition */
+  transition: all 0.3s ease;
+}
+
+
+/* ===== Navigation link hover ===== */
+
+/* Add hover effect to navigation links */
+.nav_links:hover {
+
+  /* Set hover background */
+  background-color: var(--primary-color);
+
+  /* Set hover text color */
+  color: var(--text-color);
+}
+
+
+/* ===== Active navigation link ===== */
+
+/* Highlight the current page link */
+.nav_links.active {
+
+  /* Set active link background */
+  background-color: var(--primary-color);
+
+  /* Set active link text color */
+  color: var(--text-color);
+}
+
+
+/* Hide mobile menu on desktop */
+.menu-toggle {
+  display: none;
+}
+
+
+/* ===== Hero Section ===== */
+
+/* Style the hero section */
+.hero {
+
+  /* Set hero background */
+  background-color: var(--bg-gradient);
+
+  /* Set minimum hero height */
+  min-height: 100vh;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center hero items vertically */
+  align-items: center;
+
+  /* Center hero items horizontally */
+  justify-content: center;
+
+  /* Add space between hero columns */
+  gap: 10rem;
+
+  /* Add horizontal hero padding */
+  padding: 0 9%;
+
+  /* Add bottom hero spacing */
+  padding-bottom: 5vh;
+}
+
+
+/* ===== Hero heading ===== */
+
+/* Style the main hero heading */
+.hero-content h1 {
+
+  /* Set heading size */
+  font-size: 4rem;
+
+  /* Set heading weight */
+  font-weight: 700;
+
+  /* Set heading line height */
+  line-height: 1.3;
+
+  /* Set heading color */
+  color: black;
+
+  /* Apply theme text color */
+  color: var(--text-color);
+}
+
+
+/* Style the highlighted hero name */
+.hero-content h1 span {
+
+  /* Set highlighted name color */
+  color: var(--primary-color);
+}
+
+
+/* Style the hero subheading */
+.hero-content h3 {
+
+  /* Set subheading size */
+  font-size: 2rem;
+
+  /* Add space below subheading */
+  margin-bottom: 1rem;
+
+  /* Set subheading color */
+  color: var(--text-color);
+}
+
+
+/* Style the typing animation text */
+.typing-text {
+
+  /* Set typing text color */
+  color: var(--primary-color);
+}
+
+
+/* Style the hero paragraph */
+.hero-content p {
+
+  /* Set paragraph font size */
+  font-size: 1rem;
+
+  /* Set paragraph font weight */
+  font-weight: 500;
+
+  /* Add space below paragraph */
+  margin-bottom: 2rem;
+
+  /* Limit paragraph width */
+  max-width: 500px;
+
+  /* Set paragraph color */
+  color: var(--text-color);
+}
+
+
+/* ===== Social icons and buttons ===== */
+
+/* Style social media links */
+.social-icons a {
+
+  /* Display icons using inline Flexbox */
+  display: inline-flex;
+
+  /* Center icon horizontally */
+  justify-content: center;
+
+  /* Center icon vertically */
+  align-items: center;
+
+  /* Set icon container width */
+  width: 40px;
+
+  /* Set icon container height */
+  height: 40px;
+
+  /* Set transparent background */
+  background: transparent;
+
+  /* Add icon border */
+  border: 2px solid #008073;
+
+  /* Make icon container circular */
+  border-radius: 50%;
+
+  /* Set icon color */
+  color: #008073;
+
+  /* Add spacing around icons */
+  margin: 0 1rem 2rem 0;
+
+  /* Add smooth transition */
+  transition: 0.3s ease;
+
+  /* Set icon size */
+  font-size: 3vh;
+
+  /* Remove link underline */
+  text-decoration: none;
+}
+
+
+/* Add hover effect to social icons */
+.social-icons a:hover {
+
+  /* Change icon background */
+  background: #008073;
+
+  /* Change icon color */
+  color: #000000;
+
+  /* Add icon glow */
+  box-shadow: 0 0 20px #008073;
+
+  /* Change border color */
+  border: 2px solid white;
+}
+
+
+/* Style the button group */
+.btn-group {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Add space between buttons */
+  gap: 1.5rem;
+
+  /* Set button group text color */
+  color: var(--text-color);
+}
+
+
+/* Remove button link underline */
+.btn-group a {
+
+  /* Remove link decoration */
+  text-decoration: none;
+}
+
+
+/* Style buttons */
+.btn {
+
+  /* Add button padding */
+  padding: 10px 28px;
+
+  /* Set transparent button background */
+  background: transparent;
+
+  /* Round button corners */
+  border-radius: 40px;
+
+  /* Set button text color */
+  color: #008073;
+
+  /* Set button font weight */
+  font-weight: 600;
+
+  /* Add smooth button transition */
+  transition: 0.3s ease;
+
+  /* Add button border */
+  border: 2px solid #008073;
+}
+
+
+/* Add hover effect to buttons */
+.btn:hover {
+
+  /* Change button text color */
+  color: var(--text-color);
+
+  /* Add button glow */
+  box-shadow: 0 0 20px #008073;
+}
+
+
+/* Style the second button */
+.btn:nth-child(2) {
+
+  /* Keep second button background transparent */
+  background: transparent;
+
+  /* Add second button border */
+  border: 2px solid #008073;
+
+  /* Set second button text color */
+  color: var(--text-color);
+}
+
+
+/* Add secondary button hover shadow */
+.btn:hover {
+
+  /* Add primary color glow */
+  box-shadow: 0 0 15px var(--primary-color);
+}
+
+
+/* ===== Animated circle and image ===== */
+
+/* Style the hero image circle */
+.hero-img .circle {
+
+  /* Set relative positioning */
+  position: relative;
+
+  /* Set circle width */
+  width: 400px;
+
+  /* Set circle height */
+  height: 400px;
+
+  /* Make the container circular */
+  border-radius: 50%;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center image horizontally */
+  justify-content: center;
+
+  /* Center image vertically */
+  align-items: center;
+}
+
+
+/* Style the hero image */
+.hero-img .circle img {
+
+  /* Set image width */
+  width: 100%;
+
+  /* Make image circular */
+  border-radius: 50%;
+
+  /* Set image stacking order */
+  z-index: 1;
+
+  /* Add top image spacing */
+  margin-top: 6vh;
+}
+
+
+/* Create the animated circle border */
+.hero-img .circle::before {
+
+  /* Create an empty pseudo-element */
+  content: '';
+
+  /* Position the border relative to circle */
+  position: absolute;
+
+  /* Set border width */
+  width: 105%;
+
+  /* Set border height */
+  height: 105%;
+
+  /* Set circle border */
+  border: 5px solid var(--primary-color);
+
+  /* Make border circular */
+  border-radius: 50%;
+
+  /* Add outer and inner glow */
+  box-shadow: 0 0 30px var(--primary-color), inset 0 0 30px var(--primary-color);
+
+  /* Apply pulse animation */
+  animation: pulse 3s linear infinite;
+}
+
+
+/* Define the circle pulse animation */
+@keyframes pulse {
+
+  /* Set animation starting state */
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  /* Set animation middle state */
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  /* Set animation ending state */
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+
+/* ===== Main title page heading ===== */
+
+/* Style the main page heading */
+.main-heading {
+
+  /* Set heading color */
+  color: var(--primary-color);
+
+  /* Center the heading */
+  text-align: center;
+
+  /* Add top heading spacing */
+  padding-top: 5vh;
+
+  /* Add bottom heading spacing */
+  padding-bottom: 3vh;
+}
+
+
+/* ===== About section ===== */
+
+/* Style the about section */
+.about {
+
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set about background */
+  background-color: var(--bg-gradient);
+
+  /* Fit section height to content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 5vh;
+}
+
+
+/* Create about flex layout */
+.about-flex {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* Separate content horizontally */
+  justify-content: space-between;
+
+  /* Set item gap */
+  gap: 1px;
+
+  /* Use full available width */
+  width: 100%;
+}
+
+
+/* Create about page layout */
+.About-page {
+
+  /* Use full available width */
+  width: 100%;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Distribute about content */
+  justify-content: space-evenly;
+
+  /* Center about content */
+  align-items: center;
+
+  /* Allow content to wrap */
+  flex-wrap: wrap;
+}
+
+
+/* Style the about image container */
+.about-image {
+
+  /* Set image container width */
+  flex-basis: 30%;
+
+  /* Set image background */
+  background-color: var(--header-color);
+
+  /* Round image container corners */
+  border-radius: 3vh;
+}
+
+
+/* Style the about image */
+.about-image img {
+
+  /* Set image width */
+  width: 100%;
+
+  /* Fit image height to content */
+  height: fit-content;
+
+  /* Remove image padding */
+  padding: 0;
+
+  /* Adjust image margin */
+  margin: -1vh;
+}
+
+
+/* Style the about information */
+.information-about {
+
+  /* Set information width */
+  flex-basis: 50%;
+
+  /* Add left spacing */
+  margin-left: 1%;
+}
+
+
+/* Style the about heading */
+.about_me {
+
+  /* Add left heading spacing */
+  margin-left: 2vh;
+
+  /* Set heading color */
+  color: var(--primary-color);
+
+  /* Add bottom heading spacing */
+  padding-bottom: 3vh;
+}
+
+
+/* Style the about paragraph */
+.about_paragraph {
+
+  /* Set paragraph font size */
+  font-size: 2.5vh;
+
+  /* Set paragraph font weight */
+  font-weight: 500;
+
+  /* Set paragraph color */
+  color: var(--text-color);
+
+  /* Add bottom paragraph spacing */
+  padding-bottom: 3vh;
+}
+
+
+/* Style detail labels */
+.detail_text {
+
+  /* Set detail font weight */
+  font-weight: 900;
+
+  /* Set detail color */
+  color: #008073;
+
+  /* Add bottom detail spacing */
+  padding-bottom: 0.5vh;
+}
+
+
+/* Style detail values */
+.detail_text span {
+
+  /* Set detail value color */
+  color: var(--text-color);
+
+  /* Set detail value weight */
+  font-weight: 500;
+}
+
+
+/* ===== Education section ===== */
+
+/* Style the education section */
+.education {
+
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set education background */
+  background-color: var(--bg-gradient);
+
+  /* Fit section height to content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 5vh;
+}
+
+
+/* Create education flex layout */
+.education_flex {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center education items */
+  align-items: center;
+
+  /* Separate education items */
+  justify-content: space-between;
+
+  /* Set item gap */
+  gap: 1px;
+}
+
+
+/* Create education page layout */
+.education_page {
+
+  /* Use full available width */
+  width: 100%;
+
+  /* Fit height to content */
+  height: max-content;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center education content horizontally */
+  justify-content: center;
+
+  /* Center education content vertically */
+  align-items: center;
+}
+
+
+/* Style the education timeline */
+.timeline {
+
+  /* Set relative positioning */
+  position: relative;
+
+  /* Set maximum timeline width */
+  max-width: 1200px;
+
+  /* Center the timeline */
+  margin: 0 auto;
+}
+
+
+/* Create the vertical timeline line */
+.timeline::after {
+
+  /* Create an empty pseudo-element */
+  content: '';
+
+  /* Set absolute positioning */
+  position: absolute;
+
+  /* Set timeline width */
+  width: 4px;
+
+  /* Set timeline color */
+  background-color: var(--line-color);
+
+  /* Start timeline at the top */
+  top: 0;
+
+  /* Extend timeline to the bottom */
+  bottom: 0;
+
+  /* Position timeline in the center */
+  left: 50%;
+
+  /* Adjust center position */
+  margin-left: -1px;
+
+  /* Add timeline glow */
+  box-shadow: 0 0 10px #168b81;
+}
+
+
+/* Style education timeline containers */
+.educatin_container {
+
+  /* Add container padding */
+  padding: 10px 40px;
+
+  /* Set relative positioning */
+  position: relative;
+
+  /* Set container width */
+  width: 50%;
+
+  /* Use border-box sizing */
+  box-sizing: border-box;
+}
+
+
+/* Create timeline dots */
+.educatin_container::after {
+
+  /* Create an empty pseudo-element */
+  content: '';
+
+  /* Set dot positioning */
+  position: absolute;
+
+  /* Set dot width */
+  width: 15px;
+
+  /* Set dot height */
+  height: 15px;
+
+  /* Position dot from the right */
+  right: -10px;
+
+  /* Set dot background */
+  background-color: var(--bg-color);
+
+  /* Add dot border */
+  border: 3px solid var(--line-color);
+
+  /* Center dot vertically */
+  top: 50%;
+
+  /* Make dot circular */
+  border-radius: 50%;
+
+  /* Place dot above other elements */
+  z-index: 1;
+}
+
+
+/* Position the right timeline dot */
+.right::after {
+
+  /* Move dot to the left */
+  left: -8px;
+}
+
+
+/* Align left education paragraph */
+.education_left_paragraph {
+
+  /* Align text to the start */
+  text-align: start;
+}
+
+
+/* Position left education container */
+.education_left {
+
+  /* Keep left container on the left */
+  left: 0;
+
+  /* Align text to the right */
+  text-align: right;
+}
+
+
+/* Position right education container */
+.right {
+
+  /* Move right container to the right half */
+  left: 50%;
+
+  /* Align text to the left */
+  text-align: left;
+}
+
+
+/* ===== Education content boxes ===== */
+
+/* Style education content boxes */
+.content {
+
+  /* Add content padding */
+  padding: 20px 30px;
+
+  /* Set content background */
+  background: var(--bg-color);
+
+  /* Add content border */
+  border: 2px solid var(--line-color);
+
+  /* Create pill-shaped corners */
+  border-radius: 50px;
+
+  /* Set relative positioning */
+  position: relative;
+
+  /* Add hover transition */
+  transition: transform 0.3s ease;
+}
+
+
+/* Add hover effect to education content */
+.content:hover {
+
+  /* Slightly enlarge content */
+  transform: scale(1.02);
+
+  /* Add content glow */
+  box-shadow: 0 0 15px #008073;
+}
+
+
+/* Style education dates */
+.date {
+
+  /* Make date text bold */
+  font-weight: bold;
+
+  /* Set date color */
+  color: #168b81;
+
+  /* Add space below date */
+  margin-bottom: 10px;
+}
+
+
+/* Set education status color */
+.education_status {
+
+  /* Set status text color */
+  color: var(--text-color);
+}
+
+
+/* Set education paragraph color */
+.education_p {
+
+  /* Set education text color */
+  color: var(--text-color);
+}
+
+
+/* ===== Skills page ===== */
+
+/* Style the skills section */
+.skills {
+
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set skills background */
+  background-color: var(--bg-gradient);
+
+  /* Fit section height to content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 5vh;
+}
+
+
+/* Create skills flex layout */
+.skills-flex {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center skills items */
+  align-items: center;
+
+  /* Separate skills content */
+  justify-content: space-between;
+
+  /* Set item gap */
+  gap: 1px;
+}
+
+
+/* Style skills page container */
+.skills-page {
+
+  /* Use full available width */
+  width: 100%;
+
+  /* Fit height to content */
+  height: max-content;
+
+  /* Remove left margin */
+  margin-left: 0;
+}
+
+
+/* Style technical skills heading */
+.heading-underline {
+
+  /* Add underline */
+  text-decoration: underline;
+
+  /* Set underline spacing */
+  text-underline-offset: 10px;
+
+  /* Add bottom spacing */
+  margin-bottom: 40px;
+
+  /* Set heading size */
+  font-size: 24px;
+
+  /* Set heading color */
+  color: #168b81;
+}
+
+
+/* Style professional skills heading */
+.prof-skill-heading {
+
+  /* Add underline */
+  text-decoration: underline;
+
+  /* Set underline spacing */
+  text-underline-offset: 10px;
+
+  /* Set heading size */
+  font-size: 24px;
+
+  /* Set heading color */
+  color: #168b81;
+
+  /* Add left spacing */
+  margin-left: 1vh;
+}
+
+
+/* Create skills content layout */
+.skills-container {
+
+  /* Use full available width */
+  width: 100%;
+
+  /* Fit height to content */
+  height: max-content;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Distribute skill sections evenly */
+  justify-content: space-evenly;
+
+  /* Center skill sections vertically */
+  align-items: center;
+
+  /* Allow skill sections to wrap */
+  flex-wrap: wrap;
+}
+
+
+/* ===== Technical skills horizontal bars ===== */
+
+/* Style each technical skill row */
+.tech-skills .skill-row {
+
+  /* Set skill row width */
+  width: 120%;
+
+  /* Add space below each skill */
+  margin-bottom: 30px;
+}
+
+
+/* Style skill information */
+.skill-info {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Separate skill name and percentage */
+  justify-content: space-between;
+
+  /* Center skill information vertically */
+  align-items: center;
+
+  /* Add space below information */
+  margin-bottom: 10px;
+}
+
+
+/* Style skill information text */
+.skill-info span {
+
+  /* Set skill text color */
+  color: #168b81;
+
+  /* Make skill text semi-bold */
+  font-weight: 600;
+}
+
+
+/* Style progress bar container */
+.bar-container {
+
+  /* Set progress bar width */
+  width: 130%;
+
+  /* Set progress bar height */
+  height: 5px;
+
+  /* Set progress background */
+  background: var(--text-color);
+
+  /* Enable relative positioning */
+  position: relative;
+}
+
+
+/* Style progress bar fill */
+.bar-fill {
+
+  /* Fill the progress bar height */
+  height: 100%;
+
+  /* Set progress fill color */
+  background: var(--primary-color);
+
+  /* Set dynamic progress width */
+  width: var(--target-width, 0%);
+
+  /* Apply progress animation */
+  animation: fillBar 2s forwards cubic-bezier(1, 0, 0.5, 1);
+}
+
+
+/* Define progress bar animation */
+@keyframes fillBar {
+
+  /* Animate progress bar to target width */
+  to {
+    width: var(--target-width, 0%);
+  }
+}
+
+
+/* ===== Professional skills circular bars ===== */
+
+/* Create professional skills grid */
+.prof-skills-grid {
+
+  /* Use CSS Grid layout */
+  display: grid;
+
+  /* Create two equal columns */
+  grid-template-columns: repeat(2, 1fr);
+
+  /* Add grid spacing */
+  gap: 25px;
+
+  /* Center skill content */
+  text-align: center;
+
+  /* Add top grid spacing */
+  margin-top: 5vh;
+}
+
+
+/* Style circular skill boxes */
+.circle-box {
+
+  /* Enable relative positioning */
+  position: relative;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Arrange content vertically */
+  flex-direction: column;
+
+  /* Center content horizontally */
+  align-items: center;
+}
+
+
+/* Style SVG skill circles */
+.circle-svg {
+
+  /* Set SVG width */
+  width: 120px;
+
+  /* Set SVG height */
+  height: 120px;
+
+  /* Rotate SVG circle */
+  transform: rotate(-90deg);
+}
+
+
+/* Style circle background */
+.circle-bg {
+
+  /* Remove circle fill */
+  fill: none;
+
+  /* Set circle background color */
+  stroke: var(--text-color);
+
+  /* Set circle border width */
+  stroke-width: 8;
+}
+
+
+/* Style circle progress */
+.circle-progress {
+
+  /* Remove circle fill */
+  fill: none;
+
+  /* Set progress color */
+  stroke: var(--primary-color);
+
+  /* Set progress width */
+  stroke-width: 8;
+
+  /* Make progress ends rounded */
+  stroke-linecap: round;
+
+  /* Set circle circumference */
+  stroke-dasharray: 314;
+
+  /* Hide progress initially */
+  stroke-dashoffset: 314;
+
+  /* Apply circle animation */
+  animation: fillCircle 2s forwards;
+}
+
+
+/* Position percentage text */
+.percentage {
+
+  /* Position percentage absolutely */
+  position: absolute;
+
+  /* Set percentage top position */
+  top: 40px;
+
+  /* Set percentage font weight */
+  font-weight: 600;
+}
+
+
+/* Style circular skill names */
+.circle-name {
+
+  /* Set skill name color */
+  color: #168b81;
+
+  /* Make skill name semi-bold */
+  font-weight: 600;
+}
+
+
+/* Define circular progress animation */
+@keyframes fillCircle {
+
+  /* Animate circle to target offset */
+  to {
+    stroke-dashoffset: var(--target-offset);
+  }
+}
+
+
+/* ===== Skills responsive design ===== */
+
+/* Apply responsive styles below 780px */
+@media (max-width: 780px) {
+
+  /* Stack skills into one column */
+  .skills-container {
+    grid-template-columns: 1fr;
+
+    /* Add space between skill sections */
+    gap: 50px;
+  }
+}
+
+
+/* ===== Services page ===== */
+
+/* Style the services section */
+.Services {
+
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set services background */
+  background-color: var(----bg-gradient);
+
+  /* Fit section height to content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 5vh;
+}
+
+
+/* Create services flex layout */
+.service-flex {
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center service items vertically */
+  align-items: center;
+
+  /* Separate service items */
+  justify-content: space-between;
+
+  /* Set item gap */
+  gap: 1px;
+}
+
+
+/* Create services page layout */
+.service-page {
+
+  /* Use full available width */
+  width: 100%;
+
+  /* Fit height to content */
+  height: max-content;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Distribute service cards evenly */
+  justify-content: space-evenly;
+
+  /* Center service cards vertically */
+  align-items: center;
+
+  /* Allow service cards to wrap */
+  flex-wrap: wrap;
+}
+
+
+/* ===== Service card styling ===== */
+
+/* Style individual service cards */
+.service-card {
+
+  /* Set service card width */
+  width: 32%;
+
+  /* Set service card background */
+  background-color: var(--bg-color);
+
+  /* Add card inner spacing */
+  padding: 40px 30px;
+
+  /* Add card border */
+  border: 1px solid #10564f;
+
+  /* Round card corners */
+  border-radius: 10px;
+
+  /* Add smooth card transition */
+  transition: all 0.3s ease;
+
+  /* Show pointer cursor */
+  cursor: pointer;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Arrange card content vertically */
+  flex-direction: column;
+
+  /* Center card content horizontally */
+  align-items: center;
+
+  /* Center card content vertically */
+  justify-content: center;
+}
+
+
+/* Style service icons */
+.service-card i {
+
+  /* Set icon size */
+  font-size: 2.5rem;
+
+  /* Add space below icon */
+  margin-bottom: 20px;
+
+  /* Set icon color */
+  color: #008073;
+}
+
+
+/* Style service headings */
+.service-card h3 {
+
+  /* Set service heading color */
+  color: #008073;
+
+  /* Add space below heading */
+  margin-bottom: 15px;
+
+  /* Set heading font size */
+  font-size: 1.5rem;
+}
+
+
+/* Style service descriptions */
+.service-card p {
+
+  /* Set paragraph color */
+  color: var(--text-color);
+
+  /* Set paragraph line height */
+  line-height: 1.6;
+
+  /* Set paragraph font size */
+  font-size: 0.95rem;
+}
+
+
+/* ===== Service hover and active state ===== */
+
+/* Add hover effect to service cards */
+.service-card:hover {
+
+  /* Change card background */
+  background-color: #008073;
+
+  /* Move card upward */
+  transform: translateY(-5px);
+}
+
+
+/* Change service content color on hover or active */
+.service-card:hover h3,
+.service-card.active h3,
+.service-card:hover p,
+.service-card.active p,
+.service-card:hover i,
+.service-card.active i {
+
+  /* Set content color to white */
+  color: #fff;
+}
+/* ===== Projects section page ===== */
+
+/* Style the projects section */
+.projects {
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set projects background */
+  background-color: var(--bg-gradient);
+
+  /* Allow section height to fit content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 8vh;
+}
+
+/* Create projects flex container */
+.project-flex {
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* Place items with space between */
+  justify-content: space-between;
+
+  /* Set gap between items */
+  gap: 1px;
+}
+
+/* Create the main project page layout */
+.project-page {
+  /* Use full available width */
+  width: 100%;
+
+  /* Allow height to fit content */
+  height: max-content;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Distribute project cards evenly */
+  justify-content: space-evenly;
+
+  /* Center project cards vertically */
+  align-items: center;
+
+  /* Allow cards to wrap */
+  flex-wrap: wrap;
+}
+
+/* Set project container size */
+.container-project {
+  /* Set project container width */
+  width: 23%;
+
+  /* Allow height to fit content */
+  height: max-content;
+
+  /* Add left spacing */
+  margin-left: 3vh;
+}
+
+/* Style individual project cards */
+.project_card {
+  /* Set relative positioning */
+  position: relative;
+
+  /* Round the card corners */
+  border-radius: 22px;
+
+  /* Hide content outside the card */
+  overflow: hidden;
+
+  /* Set project card height */
+  height: 420px;
+
+  /* Show pointer cursor */
+  cursor: pointer;
+
+  /* Add smooth card transition */
+  transition: 0.4s ease;
+
+  /* Set card background color */
+  background: #000;
+}
+
+/* Style project card images */
+.project_card img {
+  /* Make image full width */
+  width: 100%;
+
+  /* Make image full height */
+  height: 100%;
+
+  /* Cover the entire card */
+  object-fit: cover;
+
+  /* Add smooth image transition */
+  transition: 0.5s ease;
+}
+
+/* Zoom project image on hover */
+.project_card:hover img {
+  /* Slightly enlarge the image */
+  transform: scale(1.05);
+}
+
+
+/* Style the project information overlay */
+.info-card {
+  /* Position the card relative to project card */
+  position: absolute;
+
+  /* Set bottom spacing */
+  bottom: 18px;
+
+  /* Set left spacing */
+  left: 18px;
+
+  /* Set right spacing */
+  right: 18px;
+
+  /* Set overlay background */
+  background: var(--bg-color);
+
+  /* Round overlay corners */
+  border-radius: 16px;
+
+  /* Add inner spacing */
+  padding: 18px 20px;
+
+  /* Add overlay shadow */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+
+  /* Move overlay downward initially */
+  transform: translateY(20px);
+
+  /* Hide overlay initially */
+  opacity: 0;
+
+  /* Add smooth overlay transition */
+  transition: 0.4s ease;
+}
+
+/* Show project information on hover */
+.project_card:hover .info-card {
+  /* Move overlay into position */
+  transform: translateY(0);
+
+  /* Make overlay visible */
+  opacity: 1;
+}
+
+/* Style project location text */
+.place {
+  /* Set location text size */
+  font-size: 13px;
+
+  /* Set location text weight */
+  font-weight: 500;
+
+  /* Set location text color */
+  color: var(--text-color);
+
+  /* Add space below location */
+  margin-bottom: 6px;
+}
+
+/* Style project title */
+.title {
+  /* Set title size */
+  font-size: 20px;
+
+  /* Set title weight */
+  font-weight: 600;
+
+  /* Add space below title */
+  margin-bottom: 10px;
+
+  /* Set title color */
+  color: #008073;
+}
+
+/* Style read more link */
+.read-more {
+  /* Set link font size */
+  font-size: 18px;
+
+  /* Set link font weight */
+  font-weight: 600;
+
+  /* Set link color */
+  color: var(--text-color);
+
+  /* Remove link underline */
+  text-decoration: none;
+
+  /* Use inline Flexbox */
+  display: inline-flex;
+
+  /* Center link items vertically */
+  align-items: center;
+
+  /* Add space between link items */
+  gap: 6px;
+}
+
+/* Add hover effect to read more link */
+.read-more:hover {
+  /* Add double underline */
+  text-decoration: double underline;
+}
+
+
+/* ===== Contact page section ===== */
+
+/* Style the contact section */
+.contact {
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add bottom border */
+  border-bottom: 1px solid var(--line-color);
+
+  /* Set contact background */
+  background-color: var(--bg-color);
+
+  /* Allow section height to fit content */
+  height: max-content;
+
+  /* Add bottom spacing */
+  padding-bottom: 12vh;
+}
+
+/* Create contact flex container */
+.contact-flex {
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center items vertically */
+  align-items: center;
+
+  /* Place items with space between */
+  justify-content: space-between;
+
+  /* Set gap between items */
+  gap: 1px;
+}
+
+/* Create the contact page layout */
+.contact-page {
+  /* Use full available width */
+  width: 100%;
+
+  /* Allow height to fit content */
+  height: max-content;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center content horizontally */
+  justify-content: center;
+
+  /* Center content vertically */
+  align-items: center;
+}
+
+/* Style the contact form box */
+.contact-box {
+  /* Set contact box width */
+  width: 90%;
+
+  /* Set maximum width */
+  max-width: 100%;
+
+  /* Set contact box background */
+  background: var(--bg-color);
+
+  /* Add contact box border */
+  border: 4px solid var(--line-color);
+
+  /* Round contact box corners */
+  border-radius: 8px;
+
+  /* Add inner spacing */
+  padding: 30px;
+
+  /* Add contact box shadow */
+  box-shadow: 0 0 35px rgba(104, 150, 145, 0.3);
+}
+
+/* Style contact form heading */
+.contact-box h2 {
+  /* Center the heading */
+  text-align: center;
+
+  /* Set heading color */
+  color: var(--line-color);
+
+  /* Add space below heading */
+  margin-bottom: 25px;
+
+  /* Capitalize heading text */
+  text-transform: capitalize;
+}
+
+/* Create contact form grid */
+.form-grid {
+  /* Use CSS Grid layout */
+  display: grid;
+
+  /* Create two equal columns */
+  grid-template-columns: 1fr 1fr;
+
+  /* Add space between form fields */
+  gap: 20px;
+}
+
+/* Style individual input groups */
+.input-group {
+  /* Use full available width */
+  width: 100%;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Arrange label and input vertically */
+  flex-direction: column;
+}
+
+/* Style input labels */
+.input-group label {
+  /* Set label color */
+  color: var(--line-color);
+
+  /* Set label font size */
+  font-size: 14px;
+
+  /* Add space below label */
+  margin-bottom: 6px;
+}
+
+/* Style input and textarea fields */
+.input-group input,
+.input-group textarea {
+  /* Make field background transparent */
+  background: transparent;
+
+  /* Remove default border */
+  border: none;
+
+  /* Add bottom border */
+  border-bottom: 2px solid var(--line-color);
+
+  /* Add field inner spacing */
+  padding: 8px 5px;
+
+  /* Set input text color */
+  color: var(--text-color);
+
+  /* Remove default outline */
+  outline: none;
+
+  /* Set input font size */
+  font-size: 14px;
+}
+
+/* Style the message textarea */
+.input-group textarea {
+  /* Prevent textarea resizing */
+  resize: none;
+
+  /* Set minimum textarea height */
+  min-height: 120px;
+}
+
+/* Position the message box in the grid */
+.message-box {
+  /* Place message box in the second column */
+  grid-column: 2 / 3;
+
+  /* Make message box span four rows */
+  grid-row: 1 / span 4;
+}
+
+/* Style the send button container */
+.send-btn {
+  /* Add space above the button */
+  margin-top: 25px;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Align button to the right */
+  justify-content: flex-end;
+}
+
+/* Style the send button */
+.send-btn button {
+  /* Set button width */
+  width: 20%;
+
+  /* Add button inner spacing */
+  padding: 12px 80px;
+
+  /* Make button background transparent */
+  background: transparent;
+
+  /* Add button border */
+  border: 1px solid var(--line-color);
+
+  /* Round button corners */
+  border-radius: 4px;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Center button content vertically */
+  align-items: center;
+
+  /* Center button content horizontally */
+  justify-content: center;
+
+  /* Set button font size */
+  font-size: 16px;
+
+  /* Set button font weight */
+  font-weight: 800;
+
+  /* Set button text color */
+  color: var(--line-color);
+
+  /* Make button text bold */
+  font-weight: bold;
+
+  /* Show pointer cursor */
+  cursor: pointer;
+
+  /* Add smooth button transition */
+  transition: 0.3s;
+}
+
+/* Add hover effect to send button */
+.send-btn button:hover {
+  /* Change button background on hover */
+  background: var(--line-color);
+
+  /* Change button text color on hover */
+  color: white;
+}
+
+/* ===== Footer section ===== */
+
+/* Style the main footer */
+.footer {
+  /* Set the footer text color */
+  color: var(--primary-color);
+
+  /* Add space inside the footer */
+  padding: 70px 8% 20px;
+}
+
+/* Create the footer column layout */
+.footer-container {
+  /* Use CSS Grid layout */
+  display: grid;
+
+  /* Create responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  /* Add space between columns */
+  gap: 40px;
+}
+
+/* Style footer column headings */
+.footer-col h3 {
+  /* Add space below heading */
+  margin-bottom: 20px;
+
+  /* Set heading color */
+  color: var(--primary-color);
+
+  /* Set heading font size */
+  font-size: 22px;
+}
+
+/* Style the footer logo container */
+.logo {
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Vertically center logo items */
+  align-items: center;
+
+  /* Add space between logo items */
+  gap: 15px;
+
+  /* Add space below the logo */
+  margin-bottom: 20px;
+}
+
+/* Style the logo icon */
+.logo i {
+  /* Set icon size */
+  font-size: 35px;
+
+  /* Set icon color */
+  color: var(--primary-color);
+}
+
+/* Style the logo heading */
+.logo h2 {
+  /* Set logo heading size */
+  font-size: 28px;
+}
+
+/* Style the logo subtitle */
+.logo span {
+  /* Set subtitle color */
+  color: var(--text-color);
+
+  /* Set subtitle font size */
+  font-size: 15px;
+}
+
+/* Style footer paragraphs */
+.footer-col p {
+  /* Set paragraph color */
+  color: var(--text-color);
+
+  /* Increase paragraph line spacing */
+  line-height: 1.8;
+
+  /* Add space below paragraphs */
+  margin-bottom: 20px;
+}
+
+/* Remove default footer list styling */
+.footer-col ul {
+  /* Remove list bullets */
+  list-style: none;
+}
+
+/* Style footer list items */
+.footer-col ul li {
+  /* Add space between list items */
+  margin-bottom: 12px;
+
+  /* Set list item color */
+  color: var(--text-color);
+}
+
+/* Style footer links */
+.footer-col ul li a {
+  /* Remove link underline */
+  text-decoration: none;
+
+  /* Set link color */
+  color: var(--text-color);
+
+  /* Add smooth hover transition */
+  transition: 0.3s;
+}
+
+/* Add hover effect to footer links */
+.footer-col ul li a:hover {
+  /* Change link color on hover */
+  color: var(--hover-color);
+
+  /* Move link slightly to the right */
+  padding-left: 8px;
+}
+
+/* Arrange social links horizontally */
+.social-links {
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Add space between social icons */
+  gap: 15px;
+}
+
+/* Style social media links */
+.social-links a {
+  /* Set social icon width */
+  width: 45px;
+
+  /* Set social icon height */
+  height: 45px;
+
+  /* Add social icon border */
+  border: 1px solid var(--line-color);
+
+  /* Make the icon container circular */
+  border-radius: 50%;
+
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Make icon bold */
+  font-weight: 900;
+
+  /* Set icon size */
+  font-size: 3vh;
+
+  /* Vertically center the icon */
+  align-items: center;
+
+  /* Horizontally center the icon */
+  justify-content: center;
+
+  /* Set icon color */
+  color: var(--primary-color);
+
+  /* Remove link underline */
+  text-decoration: none;
+
+  /* Add smooth hover transition */
+  transition: 0.3s;
+}
+
+/* Add hover effect to social links */
+.social-links a:hover {
+  /* Change background on hover */
+  background: var(--primary-color);
+
+  /* Move icon upward */
+  transform: translateY(-5px);
+
+  /* Change icon color on hover */
+  color: var(--text-color);
+}
+
+/* Align contact information */
+.contact-info p {
+  /* Use Flexbox layout */
+  display: flex;
+
+  /* Vertically center contact items */
+  align-items: center;
+
+  /* Add space between icon and text */
+  gap: 10px;
+}
+
+/* Style contact icons */
+.contact-info i {
+  /* Set contact icon color */
+  color: var(--primary-color);
+}
+
+/* Style the bottom footer area */
+.footer-bottom {
+  /* Add top border */
+  border-top: 1px solid var(--line-color);
+
+  /* Add space above bottom footer */
+  margin-top: 50px;
+
+  /* Add space above bottom text */
+  padding-top: 20px;
+
+  /* Center bottom footer text */
+  text-align: center;
+}
+
+/* Style the first bottom footer paragraph */
+.footer-bottom p:first-child {
+  /* Set copyright text color */
+  color: var(--text-color);
+
+  /* Add space below copyright text */
+  margin-bottom: 8px;
+}
+
+/* Style the last bottom footer paragraph */
+.footer-bottom p:last-child {
+  /* Set tagline color */
+  color: var(--primary-color);
+}
+
+/* Center the footer content on tablets */
+@media (max-width: 768px) {
+
+  /* Center footer text */
+  .footer {
+    text-align: center;
+  }
+
+  /* Center the footer logo */
+  .logo {
+    justify-content: center;
+  }
+
+  /* Center social media links */
+  .social-links {
+    justify-content: center;
+  }
+
+  /* Center contact information */
+  .contact-info p {
+    justify-content: center;
+  }
+}
+
+
+/* Apply responsive styles for mobile devices */
+@media (max-width: 720px) {
+
+    /* Show the mobile menu button */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Position the mobile navigation menu */
+    .nav-menu {
+        /* Set absolute positioning */
+        position: absolute;
+
+        /* Hide the menu above the screen */
+        top: -550px;
+
+        /* Align menu to the left */
+        left: 0;
+
+        /* Arrange menu items vertically */
+        flex-direction: column;
+
+        /* Set mobile menu background */
+        background-color: var(--bg-color);
+
+        /* Make menu full width */
+        width: 100%;
+
+        /* Center navigation links */
+        text-align: center;
+
+        /* Animate menu movement */
+        transition: 0.4s;
+
+        /* Add bottom border */
+        border-bottom: 1px solid var(--primary-color);
+
+        /* Add vertical menu spacing */
+        padding: 20px 0;
+    }
+
+    /* Show the mobile menu */
+    .nav-menu.show-menu {
+        /* Move menu below the header */
+        top: 70px;
+    }
+
+    /* Add spacing between mobile links */
+    .nav-menu li {
+        margin: 15px 0;
+    }
+
+
+    /* Stack the hero section vertically */
+    .hero {
+        /* Reverse the column order */
+        flex-direction: column-reverse;
+
+        /* Center hero text */
+        text-align: center;
+
+        /* Add space above hero content */
+        padding-top: 120px;
+
+        /* Allow automatic height */
+        height: auto;
+    }
+
+    /* Center the hero paragraph */
+    .hero-content p {
+        margin: 1rem auto 2rem;
+    }
+
+    /* Center the action buttons */
+    .btn-group {
+        justify-content: center;
+    }
+
+    /* Add top spacing to main headings */
+    .main-heading {
+        padding-top: 5vh;
+    }
+
+
+    /* Stack about page content vertically */
+    .About-page {
+        flex-direction: column;
+    }
+
+    /* Resize about image and information */
+    .about-image,
+    .information-about {
+        flex-basis: 95%;
+        width: 95%;
+    }
+
+    /* Reduce detail text size */
+    .detail_text {
+        font-size: 14px;
+    }
+
+    /* Add space below the about image */
+    .about-image {
+        margin-bottom: 30px;
+    }
+
+
+    /* Adjust the education timeline for mobile */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Make education containers full width */
+    .educatin_container {
+        width: 100%;
+
+        /* Add left space for the timeline */
+        padding-left: 70px;
+
+        /* Add right spacing */
+        padding-right: 25px;
+
+        /* Align education text to the left */
+        text-align: left;
+    }
+
+    /* Position timeline dots */
+    .educatin_container::after {
+        left: 21px;
+    }
+
+    /* Set education content positioning */
+    .content {
+        position: relative;
+
+        /* Add hover animation */
+        transition: transform 0.3s ease;
+    }
+
+    /* Add hover effect to education content */
+    .content:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 15px #008073;
+    }
+
+    /* Reset the right timeline container position */
+    .right {
+        left: 0%;
+    }
+
+
+    /* Adjust skills and services for mobile */
+
+    /* Make skill rows full width */
+    .tech-skills .skill-row {
+        width: 100%;
+    }
+
+    /* Make progress bars full width */
+    .bar-container {
+        width: 100%;
+    }
+
+    /* Make service cards full width */
+    .service-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+    /* Adjust project cards for mobile */
+
+    /* Make project containers full width */
+    .container-project {
+        width: 100%;
+
+        /* Add bottom spacing */
+        padding-bottom: 2vh;
+
+        /* Adjust left margin */
+        margin-left: -0.2vh;
+    }
+
+    /* Adjust project information card width */
+    .info-card {
+        width: 92%;
+
+        /* Center the information card */
+        justify-self: center;
+    }
+
+
+    /* Add button transition effect */
+    .send-btn button {
+        transition: 0.3s;
+    }
+
+    /* Add hover effect to send button */
+    .send-btn button:hover {
+        background: #168b81;
+        color: white;
+    }
+
+
+    /* Adjust contact form for mobile */
+
+    /* Change form to one column */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make message box use one column */
+    .message-box {
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+
+
+/* Apply styles to small mobile devices */
+@media (max-width: 480px) {
+
+    /* Reduce hero heading size */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Reduce hero image size */
+    .hero-img .circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Set card width for small screens */
+    .card {
+        width: 280px;
+    }
+
+    /* Testimonial card size */
+}
